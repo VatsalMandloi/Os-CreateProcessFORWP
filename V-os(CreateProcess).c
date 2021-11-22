@@ -20,10 +20,10 @@ si.cb = sizeof(si);
 ZeroMemory(&pi, sizeof(pi));
 
 
-
+//for process creation
 // Start the child process.
 
-if (!CreateProcess("C:\\Windows\\system32\\notepad.exe", // module name which is the Windows cmd command
+if (!CreateProcess("C:\\Windows\\system32\\notepad.exe", // module name which is the Windows cmd command (put file address which you want to run as a child process)
 
 NULL, // Command line.
 
@@ -59,7 +59,7 @@ WaitForSingleObject(pi.hProcess, INFINITE);
 
 printf("\n");
 
-
+//for termination
 // Close process and thread handles.
 
 CloseHandle(pi.hProcess);
