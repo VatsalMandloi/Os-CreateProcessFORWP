@@ -3,8 +3,6 @@
 
 #include <stdio.h>
 
-
-
 void main(void)
 
 {
@@ -18,7 +16,6 @@ ZeroMemory(&si, sizeof(si));
 si.cb = sizeof(si);
 
 ZeroMemory(&pi, sizeof(pi));
-
 
 //for process creation
 // Start the child process.
@@ -65,6 +62,5 @@ printf("\n");
 CloseHandle(pi.hProcess);
 
 CloseHandle(pi.hThread);
-
 
 }
